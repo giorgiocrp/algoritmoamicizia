@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AlgoritmoAmiciziaMobile.AlgoritmoStart"
+             Title="Algoritmo Amicizia">
+    <ScrollView>
+        <VerticalStackLayout 
+            Padding="30,0"
+            Spacing="25">
+            <Label 
+                Style="{StaticResource Headline}"
+                Text="Iniziamo" />
+
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                Text="Componi il numero di telefono della persona" />
+            <Label 
+                Style="{StaticResource SubHeadline}"
+                Text="E' in casa?" />
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button
+                    x:Name="YesBtn"
+                    Text="Si" 
+                    SemanticProperties.Hint="Si"
+                    Clicked="OnYesClicked"
+                    HorizontalOptions="Center"
+                    Padding="10"
+                    Margin="10"
+                />
+                <Button
+                    x:Name="NoBtn"
+                    Text="No" 
+                    SemanticProperties.Hint="No"
+                    Clicked="OnNoClicked"
+                    HorizontalOptions="Center"
+                    Padding="10"
+                    Margin="10"
+                />
+                <Button
+                    x:Name="EscBtn"
+                    Text="Esci" 
+                    SemanticProperties.Hint="Esci"
+                    Clicked="OnEscClicked"
+                    HorizontalOptions="Center"
+                    Padding="10"
+                    Margin="10"
+                />
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
